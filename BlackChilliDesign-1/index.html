@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="w3.css">
+
+    <title>Home Layout 1</title>
+
+    <style>
+       body,h1,h2,h3,h4,h5,h6 {
+           font-family:"Raleway", san-serif;
+       }
+       body, html {
+           height:100%;
+           line-height:1.8;
+       }
+       .bgimg-1 {
+           background-position:center;
+           background-size:cover; 
+           background-image:url(images/home-background);
+           min-height:100%;
+       }
+       .w3-bar .w3-button {
+           padding:16px;
+       }
+    </style>
+</head>
+<body>
+
+    <!--NavBar-->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="images/black-chilli-design.PNG" alt="Logo"></a>
+            <!--Right-sided navbar link-->
+            <div class="w3-right w3-hide-small">
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#hire" class="w3-bar-item w3-button">Hire</a>
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+            <!--Sidebar on small screen when clicking the menu icon-->
+            <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+            style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+            <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
+            <a href="#hire" onclick="w3_close()" class="w3-bar-item w3-button">Hire</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+        </nav>
+
+        <!--Header with full-height image-->
+        <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+            <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">Black Chilli Design</span><br> 
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Black Chilli Design</span><br>
+
+            <span class="w3-large">Start your planning your next event with us!</span>
+            <p><a href="" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Contact us today!</a></p>
+
+            <span class="w3-large">Check out our previous projects that Black Chill Design has been involved in.</span>
+            <p><a href="" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Previous Projects</a></p>
+
+            <span class="w3-large">Have a look at the different products that are available today.</span>
+            <p><a href="" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Hire our products</a></p>
+            </div>
+
+            <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <a href="https://www.facebook.com/Black-Chilli-1610003975986930/"><i class="fa fa-facebook-offical w3-hover-opacity"></i></a>
+            <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        </div>
+        </header>
+
+
+        </div>
+    </div>
+
+    <script>
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none'; 
+            } else{
+                mySide.style.display = 'block';
+            }
+        }
+
+        //Close the sidebar with the close button 
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
